@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./images/logo.svg" alt="Base Apparel logo" />
+      </nav>
+      <main>
+        <div class="hero-mobile-pic">
+          <img class="hero-mobile" src="./images/hero-mobile.jpg" alt="hero" />
+        </div>
+        <div class="hero-text">
+          <h1 class="h1">We're</h1>
+          <h1>
+            coming<br />
+            soon
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <form onsubmit="return check()" novalidate>
+            <label for="email"></label>
+            <input type="email" placeholder="Email Address" id="email" />
+            <button><img src="./images/icon-arrow.svg" alt="send" /></button>
+          </form>
+          <div class="error-message" id="error-message">
+            <text class="emsg">Please provide a valid email</text>
+          </div>
+        </div>
+      </main>
+    </div>
+    <img
+      class="hero-desktop"
+      src="./images/hero-desktop.jpg"
+      alt="hero-desktop"
+    />
+    <script src="./script.js"></script>
+  </body>
+</html>
